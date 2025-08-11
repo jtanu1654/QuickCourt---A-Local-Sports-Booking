@@ -50,18 +50,21 @@ nav a {
   color: #555;
 }
 
-.popular-sports, .venues {
+/* Popular Sports Section */
+.popular-sports {
   padding: 30px;
+  background-color: #ffffff;
+  border-top: 2px solid #eee;
 }
 
-.sports-grid, .venue-grid {
+.sports-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
 
-.sport, .venue-card {
+.sport {
   background-color: #fafafa;
   border-radius: 10px;
   padding: 10px;
@@ -69,9 +72,39 @@ nav a {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.sport-img, .venue-img {
+.sport-img {
   width: 100%;
-  height: 150px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Top Venues Section */
+.top-venues {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-top: 2px solid #eee;
+}
+
+.venue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.venue-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.venue-img {
+  width: 50%;
+  height: 50%;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -96,4 +129,46 @@ footer {
   padding: 20px;
   background-color: #222;
   color: white;
+}
+
+/* Floating Sidebar Button */
+.see-all-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px 0 0 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.see-all-button:hover {
+  background-color: #0056b3;
+}
+
+/* Inline Button Below Venues */
+.see-all-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.see-all-inline {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.see-all-inline:hover {
+  background-color: #0056b3;
 }
