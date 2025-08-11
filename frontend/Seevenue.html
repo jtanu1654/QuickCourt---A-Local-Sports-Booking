@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Venues in Ahmedabad</title>
+  <link rel="stylesheet" href="seevenuestyle.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">QUICKCOURT</div>
+    <nav>
+      <a href="#">Book</a>
+      <a href="#">Login / Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sports Venues in Ahmedabad: Discover and Book Nearby Venues</h1>
+    <div class="container">
+      <!-- Sidebar Filters -->
+      <aside class="filters">
+        <input type="text" placeholder="Search by venue name" />
+        <select>
+          <option>All Sports</option>
+          <option>Badminton</option>
+          <option>Football</option>
+          <option>Cricket</option>
+          <option>Table Tennis</option>
+        </select>
+        <label>Price Range (₹0 - ₹5500)</label>
+        <input type="range" min="0" max="5500" />
+
+        <h3>Choose Venue Type</h3>
+        <div class="venue-type">
+          <label><input type="checkbox" /> Indoor</label>
+          <label><input type="checkbox" /> Outdoor</label>
+        </div>
+
+        <h3>Rating</h3>
+        <div class="rating-filter">
+          <label><input type="radio" name="rating" /> ⭐ 4 & up</label>
+          <label><input type="radio" name="rating" /> ⭐ 3 & up</label>
+          <label><input type="radio" name="rating" /> ⭐ 2 & up</label>
+          <label><input type="radio" name="rating" /> ⭐ 1 & up</label>
+        </div>
+
+        <button class="clear">Clear Filters</button>
+      </aside>
+
+      <!-- Venue Cards -->
+      <section class="venues">
+        <!-- Top Row -->
+        <div class="venue-card">
+          <img src="images/badminton.jpeg" class="sport-img" />
+          <h3>SBR Badminton</h3>
+          <p>⭐ 4.5 (6 reviews)</p>
+          <p>Vaishnodevi Cir.</p>
+          <p>₹250/hour</p>
+          <div class="tags">
+            <span>Badminton</span>
+            <span>Outdoor</span>
+            <span>Top Rated</span>
+            <span>Budget</span>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="venue-card">
+          <img src="images/skyline.webp" class="sport-img" />
+          <h3>Skyline Turf</h3>
+          <p>⭐ 4.7 (12 reviews)</p>
+          <p>Thaltej, Ahmedabad</p>
+          <p>₹500/hour</p>
+          <div class="tags">
+            <span>Football</span>
+            <span>Outdoor</span>
+            <span>Top Rated</span>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="venue-card">
+          <img src="images/smash.webp" class="sport-img" />
+          <h3>Smash Arena</h3>
+          <p>⭐ 4.2 (8 reviews)</p>
+          <p>Satellite, Ahmedabad</p>
+          <p>₹350/hour</p>
+          <div class="tags">
+            <span>Table Tennis</span>
+            <span>Indoor</span>
+            <span>Budget</span>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="venue-card">
+          <img src="images/tyro.webp" class="sport-img" />
+          <h3>Tyro Turf</h3>
+          <p>⭐ 4.6 (10 reviews)</p>
+          <p>Gota, Ahmedabad</p>
+          <p>₹450/hour</p>
+          <div class="tags">
+            <span>Football</span>
+            <span>Outdoor</span>
+            <span>Shaded Turf</span>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="venue-card">
+          <img src="images/Elite Sports Arena.webp" class="sport-img" />
+          <h3>Elite Sports Arena</h3>
+          <p>⭐ 4.8 (15 reviews)</p>
+          <p>Maninagar, Ahmedabad</p>
+          <p>₹600/hour</p>
+          <div class="tags">
+            <span>Cricket</span>
+            <span>Outdoor</span>
+            <span>Premium</span>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="venue-card">
+          <img src="images/Vista Sports Arena.webp" class="sport-img" />
+          <h3>Vista Sports Arena</h3>
+          <p>⭐ 4.3 (9 reviews)</p>
+          <p>Saket-2, Ahmedabad</p>
+          <p>₹400/hour</p>
+          <div class="tags">
+            <span>Box Cricket</span>
+            <span>Football</span>
+            <span>Indoor</span>
+          </div>
+          <button>View Details</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
