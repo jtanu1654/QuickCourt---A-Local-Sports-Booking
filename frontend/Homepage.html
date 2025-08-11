@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickCourt - Book Your Game</title>
+  <link rel="stylesheet" href="Homepage.css" />
 </head>
 <body>
-    
+  <header>
+    <h1>QuickCourt</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Book Court</a>
+      <a href="#">Join Match</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking">
+      <h2>Book a Sports Facility</h2>
+      <form>
+        <label for="sport">Choose Sport:</label>
+        <select id="sport">
+          <option>Badminton</option>
+          <option>Football Turf</option>
+          <option>Tennis</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter your area" />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" />
+
+        <button type="submit">Search Courts</button>
+      </form>
+    </section>
+
+    <section class="matches">
+      <h2>Create or Join a Match</h2>
+      <button>Create Match</button>
+      <button>Join Existing Match</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 QuickCourt. All rights reserved.</p>
+  </footer>
 </body>
 </html>

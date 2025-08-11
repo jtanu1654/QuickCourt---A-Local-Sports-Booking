@@ -5,8 +5,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
-     background-blend-mode: normal, lighten, soft-light;
+    background-color: #cdbbbb;
     height: 100%;
     width: 100%;
     display: flex;
@@ -16,14 +15,13 @@ body{
 .container{
     display: flex;
     flex-direction: row;
-    height: 96vh;
-    width: 96vw;
+    height: 90vh;
+    width: 90vw;
     margin: 2vh auto;
     border: 2px solid #222;
     border-radius: 2rem;
     overflow: hidden;
     background: #fff;
-    box-shadow: 4px 4px 20px rgba(0,0,0,0.3);
 }
 .left-container{
     height: 100%;
@@ -47,25 +45,24 @@ body{
     align-items: center;
     justify-content: center;
 }
-h1, h3 {
-    margin-bottom: 0.2rem;
-    font-family: inherit;
+h1, h3{
+    margin-bottom: 1rem;
+    font-family: 'Poppins', monospace;
     font-weight: 500;
-    color: #222;
-    letter-spacing: 1px;
+    align-items: start;
 }
 .login-container{
     width: 100%;
-    max-width: 800px;
+    max-width: 400px;
     margin-bottom: 2rem;
     padding: 1rem;
 }
 .login-container p{
     margin-bottom: 0.5rem;
     font-size: 1rem;
+    text-align: right 
 }
-
-.login-container input[type="email"]{
+input[type="text"]{
     width: 100%;
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
@@ -82,7 +79,7 @@ h1, h3 {
 }
 
 .pass-container input {
-     flex: 1;
+    flex: 1;
     margin-bottom: 0;
     border-radius: 1rem 0 0 1rem; /* Only left corners rounded */
     border-right: none; /* No right border */
@@ -109,36 +106,27 @@ h1, h3 {
     width: 1.5rem;
     height: 1.5rem;
 }
-#loginbutton{
-    width: 50%;
-    margin: 1rem auto 0 auto;
-    background: #222;
-    color: #fff;
-    border: none;
+button{
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border: 2px solid #222;
     border-radius: 1rem;
-    padding: 0.75rem 0;
-    font-size: 1.1rem;
-    font-weight: bold;
+    background: #fff;
     cursor: pointer;
-    transition: background 0.2s;
+    margin: 1rem 0;
 }
-.right-container button:hover {
-    background: #444;
-    color: #fff;
-}
-
-.right-container p {
-    margin-top: 1rem;
-    color: #222;
-    text-align: center;
-}
-
-a {
+a{
     color: #007bff;
     text-decoration: none;
 }
 
-a:hover {
+a:hover{
     text-decoration: underline;
+}
+
+.right-container p{
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
 }
 

@@ -15,37 +15,30 @@
             <h1>QUICKCOURT</h1>
             <h3>SIGN UP</h3>
             <div class="register-container">
-                <img src="images/icon.jpeg" alt="Profile Icon" id="profile-icon" style="cursor:pointer;">
-                <input type="file" id="profile-upload" accept="image/*" style="display:none;">
+                <img src="images/icon.jpeg" alt="Profile Icon" >
                 <p>Sign up as</p>
                 <select>
+                    <option>Player / Facility Owner</option>
                     <option>Player</option>
                     <option>Facility Owner</option>
-                    <option>Admin</option>
                 </select>
 
                 <p>Full Name</p>
                 <input type="text">
-                <div id="name-error" style="color:red; font-size:0.9rem; margin-bottom:0.5rem;"></div>
 
                 <p>Email</p>
                 <input type="email">
-                <div id="email-error" style="color:red; font-size:0.9rem; margin-bottom:0.5rem;"></div>
 
                 <p>Password</p>
                 <div class="pass-container">
-                    <input type="password">
+                    <input type="text">
+                    <button><img src="images/Eyes_icon.png" alt=""></button>   
                 </div>
-                <div id="password-error" style="color:red; font-size:0.9rem; margin-bottom:0.5rem;"></div>
-                
                 <p>Confirm Password</p>
-                <input type="password">
-                <div id="confirm-password-error" style="color:red; font-size:0.9rem; margin-bottom:0.5rem;"></div>
+                <input type="Confirm Password">
             </div>
-            <button id="signupbutton">SIGN UP</button>
+            <button>SIGN UP</button>
             <p>Already have an account? <a href="#">LOGIN</a></p>
         </div>
     </div>
-    <script src="register.js"></script>
 </body>
-</html>
