@@ -1,61 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
 }
 
 header {
   background-color: #007bff;
   color: white;
-  padding: 20px;
-  text-align: center;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
 }
 
 nav a {
-  margin: 0 15px;
   color: white;
+  margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
 }
 
-main {
-  padding: 30px;
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6f0ff;
 }
 
-.booking, .matches {
-  background-color: white;
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #555;
+}
+
+.venues {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+}
+
+.venue-card {
+  background-color: white;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
 }
 
-form label {
-  display: block;
-  margin-top: 10px;
-}
-
-form input, form select {
+.venue-card img {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-button {
-  margin-top: 15px;
-  padding: 10px 20px;
+.venue-card h3 {
+  margin: 10px 0;
+}
+
+.venue-card p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.venue-card button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
   background-color: #007bff;
   color: white;
-  border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+.popular-sports {
+  padding: 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.popular-sports h2 {
+  margin-bottom: 20px;
+}
+
+.sports-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sport {
+  background-color: #e6f0ff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 footer {

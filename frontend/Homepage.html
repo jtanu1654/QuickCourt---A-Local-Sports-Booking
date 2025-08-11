@@ -8,45 +8,51 @@
 </head>
 <body>
   <header>
-    <h1>QuickCourt</h1>
+    <div class="logo">QUICKCOURT</div>
+    <input type="text" placeholder="Ahmedabad" class="search-bar" />
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Book Court</a>
-      <a href="#">Join Match</a>
-      <a href="#">Contact</a>
+      <a href="#">Book</a>
+      <a href="#">Log in</a>
     </nav>
   </header>
 
-  <main>
-    <section class="booking">
-      <h2>Book a Sports Facility</h2>
-      <form>
-        <label for="sport">Choose Sport:</label>
-        <select id="sport">
-          <option>Badminton</option>
-          <option>Football Turf</option>
-          <option>Tennis</option>
-        </select>
+  <section class="hero">
+    <h1>FIND PLAYERS & VENUES NEARBY</h1>
+    <p>Seamlessly explore sports venues and play with sports enthusiasts just like you!</p>
+  </section>
 
-        <label for="location">Location:</label>
-        <input type="text" id="location" placeholder="Enter your area" />
+  <section class="venues">
+    <div class="venue-card">
+      <img src="venue1.jpg" alt="Venue 1" />
+      <h3>Venue Name</h3>
+      <p>⭐ 4.5 | Ahmedabad</p>
+      <button>Book Now</button>
+      <button>View Details</button>
+    </div>
+    <div class="venue-card">
+      <img src="venue2.jpg" alt="Venue 2" />
+      <h3>Venue Name</h3>
+      <p>⭐ 4.2 | Ahmedabad</p>
+      <button>Book Now</button>
+      <button>View Details</button>
+    </div>
+    <!-- Add more venue cards as needed -->
+  </section>
 
-        <label for="date">Date:</label>
-        <input type="date" id="date" />
-
-        <button type="submit">Search Courts</button>
-      </form>
-    </section>
-
-    <section class="matches">
-      <h2>Create or Join a Match</h2>
-      <button>Create Match</button>
-      <button>Join Existing Match</button>
-    </section>
-  </main>
+  <section class="popular-sports">
+    <h2>Popular Sports</h2>
+    <div class="sports-grid">
+      <div class="sport">🏸 Badminton</div>
+      <div class="sport">⚽ Football</div>
+      <div class="sport">🏏 Cricket</div>
+      <div class="sport">🏊 Swimming</div>
+      <div class="sport">🎾 Tennis</div>
+      <div class="sport">🏓 Table Tennis</div>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 QuickCourt. All rights reserved.</p>
+    <p>&copy; 2025 QUICKCOURT. All rights reserved.</p>
   </footer>
 </body>
 </html>
