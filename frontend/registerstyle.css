@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #cdbbbb;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
     height: 100%;
     width: 100%;
     display: flex;
@@ -15,13 +15,14 @@ body{
 .container{
     display: flex;
     flex-direction: row;
-    height: 90vh;
-    width: 90vw;
+    height: 95vh;
+    width: 95vw;
     margin: 2vh auto;
     border: 2px solid #222;
     border-radius: 2rem;
     overflow: hidden;
     background: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
 }
 .left-container{
     height: 100%;
@@ -49,28 +50,15 @@ body{
 }
 
 h1, h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
     font-family: inherit;
     font-weight: 500;
     color: #222;
     letter-spacing: 1px;
 }
-
-input[type="text"], input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
-    border: 2px solid #222;
-    border-radius: 1rem;
-    font-size: 1rem;
-    outline: none;
-    background: #fff;
-}
-
-
 .register-container {
-    height: 60%;
-    width: 80%;
+    height: 70%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -94,7 +82,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .register-container select,
@@ -112,40 +100,6 @@ input[type="text"], input[type="email"], input[type="password"] {
     color: #222;
 }
 
-.pass-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.pass-container input {
-    flex: 1;
-    margin-bottom: 0;
-    border-radius: 1rem 0 0 1rem; /* Only left corners rounded */
-    border-right: none; /* No right border */
-    height: 2.5rem;
-}
-
-.pass-container button {
-    background: #fff;
-    border: 2px solid #222;
-    border-left: none; /* No left border */
-    border-radius: 0 1rem 1rem 0; /* Only right corners rounded */
-    margin-left: 0;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    height: 2.5rem;
-    width: 2.5rem; /* Make button square */
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.pass-container img {
-    width: 1.5rem;
-    height: 1.5rem;
-}
 
 .right-container button {
     width: 80%;
