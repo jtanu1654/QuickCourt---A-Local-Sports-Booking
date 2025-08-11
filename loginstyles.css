@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #cdbbbb;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 90vw;
+    margin: 2vh auto;
+    border: 2px solid #222;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: #fff;
+}
+.left-container{
+    height: 100%;
+    width: 40%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #222;
+}
+#img1{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.right-container{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1, h3{
+    margin-bottom: 1rem;
+    font-family: 'Poppins', monospace;
+    font-weight: 500;
+    align-items: start;
+}
+.login-container{
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.login-container p{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-align: right 
+}
+input[type="text"]{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #222;
+    border-radius: 1rem;
+    font-size: 1rem;
+    outline: none;
+    background: #fff;
+}
+.pass-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.pass-container input {
+    flex: 1;
+    margin-bottom: 0;
+    border-radius: 1rem 0 0 1rem; /* Only left corners rounded */
+    border-right: none; /* No right border */
+    height: 2.5rem;
+}
+
+.pass-container button {
+    background: #fff;
+    border: 2px solid #222;
+    border-left: none; /* No left border */
+    border-radius: 0 1rem 1rem 0; /* Only right corners rounded */
+    margin-left: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem; /* Make button square */
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.pass-container img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+button{
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border: 2px solid #222;
+    border-radius: 1rem;
+    background: #fff;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.right-container p{
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
