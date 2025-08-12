@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Court Booking - SBR Badminton</title>
+  <link rel="stylesheet" href="courtstyle.css" />
+</head>
+<body>
+  <header>
+    <div class="user-info">
+      <h2>Venue Booking - Chetna Singh</h2>
+      <span class="admin">Mitchell Admin</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="venue-details">
+      <h1>Court Booking</h1>
+      <h2>SBR Badminton</h2>
+      <p>📍 Satellite, Jodhpur Village</p>
+      <p>⭐ 4.5 (6 reviews)</p>
+    </section>
+
+    <section class="booking-form">
+      <form>
+        <label for="sport">Sport</label>
+        <select id="sport">
+          <option selected>Badminton</option>
+        </select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" value="2025-05-06" />
+
+        <label for="start-time">Start Time</label>
+        <input type="time" id="start-time" value="13:00" />
+
+        <label for="duration">Duration</label>
+        <div class="duration-control">
+          <button type="button" onclick="adjustDuration(-1)">−</button>
+          <span id="duration-display">2 Hr</span>
+          <button type="button" onclick="adjustDuration(1)">+</button>
+        </div>
+
+        <label for="court">Court</label>
+        <select id="court">
+          <option selected>--Select Court--</option>
+          <option>Table 1</option>
+          <option>Table 2</option>
+        </select>
+
+        <div class="total">
+          <p>Continue to Payment – ₹1200.00</p>
+        </div>
+
+        <button type="submit">Continue to Payment</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    let duration = 2;
+    function adjustDuration(change) {
+      duration = Math.max(1, Math.min(5, duration + change));
+      document.getElementById("duration-display").textContent = `${duration} Hr`;
+    }
+  </script>
+</body>
+</html>
